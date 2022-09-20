@@ -1,0 +1,428 @@
+nav
+    height: 50px
+    width: 100%
+    background: #2a2a2a
+    position: fixed
+    z-index: 2
+
+h1
+    text-transform: uppercase
+    color: $c_tx_wh
+    line-height: 24px
+    font:
+        weight: 900
+        size: 60px
+
+h2
+    text-transform: uppercase
+    color: $c_tx_wh
+    line-height: 48px
+    font:
+        weight: 700
+        size: 36px
+
+header
+    position: relative
+    height: 50px
+
+.burger
+    display: none
+
+.menu
+    padding: 13px 70px
+    margin: 0
+    list-style: none
+    display: flex
+    justify-content: space-between
+    &_item
+        border-right: 2px dotted black
+        padding-right: 27px
+        &:last-child
+            border-right: none
+        .menu_click
+            color: $c_tx_wh
+            font:
+                style: normal
+                weight: 300
+                size: 15px
+
+.sup_header
+    background: rgba(0, 0, 0, .6)
+    height: 87px
+    position: absolute
+    width: 100%
+    top: 50px
+    z-index: 1
+    .logo_img
+        display: block
+        max-width: 100%
+        margin-top: 15px
+    .logo_tx
+            color: $c_tx_wh
+            font:
+                style: normal
+                weight: 100px
+                size: 13px
+            margin-top: 6px
+    .tel_tx
+        color: $c_tx_wh
+        font:
+            style: normal
+            weight: 100
+            size: 12px
+        margin-top: 18px
+    .tel_href
+        color: $c_tx_wh
+        font:
+            style: normal
+            weight: 100
+            size: 22px
+        margin-top: 6px
+    .button_tx
+        @include bn
+
+.promo
+    background: url(../image/bg/header_bg.png) center center/cover no-repeat
+    min-height: 714px
+    padding-bottom: 185px
+    z-index: 0
+    .promo_tx
+        margin-top: 16px
+        text-align: center
+        color: $c_tx_wh
+        font:
+            weight: 400
+            size: 18px
+        line-height: 24px
+    .uber_partners
+        margin-top: 220px
+        text-align: center
+    .welcome
+        margin-top: 20px
+        text-align: center
+    .promo_bn
+        display: block
+        margin: 0 auto
+        margin-top: 115px
+        @include bn
+
+.first
+    width: 115px
+    height: 27px
+    background: $c_tx_bl
+    text-transform: uppercase
+    color: $c_tx_wh
+    font:
+        weight: 500
+        size: 11px
+        style: normal
+    text-align: center
+    padding: 6px
+    margin: 0 auto
+    margin-top: 18px
+    &_2
+        background: $c_tx_wh
+        color: $c_tx_bl
+
+.second
+    text-transform: uppercase
+    color: $c_tx_bl
+    font:
+        weight: 700
+        size: 38px
+    margin-top: 32px
+    text-align: center
+    &_2
+        color: $c_tx_wh
+
+.pcs 
+    min-width: 100%
+    padding-bottom: 84px
+    .col-md-6 
+        display: flex
+        margin-top: -14px
+        flex-wrap: wrap
+        justify-content: space-between
+        .elem
+            display: flex
+            justify-content: center
+            align-items: center
+            margin-top: 31px
+            padding: 0 35px
+            .elem_h
+                color: $c_tx_blue
+                font:
+                    weight: 500
+                    size: 17px
+                line-height: 21px
+            .elem_tx
+                align-items: center
+                color: $c_tx_bl
+                font:
+                    weight: 300
+                    size: 15px
+                line-height: 21px
+            .circ
+                min-width: 116px
+                min-height: 116px
+                background: $c_tx_blue
+                border-radius: 100%
+                display: flex
+                justify-content: center
+                align-items: center
+                margin-right: 24px
+
+.tree
+    text-align: center
+    color: $c_tx_bl
+    font:
+        font-style: normal
+        font-weight: 300
+        font-size: 17px
+    &_2
+        color: $c_tx_wh
+
+
+
+.mobile
+    min-height: 866px
+    padding: 48px 0 82px
+    background: url('../image/bg/mobile_bg.jpg') center center/cover no-repeat
+    .row
+        margin-top: 13px
+    &_item
+        position: relative
+        width: 320px
+        height: 280px
+        margin: 0 auto
+        margin-top: 13px
+        padding-top: 92px
+
+        &_1
+            background: url('../icons/mobile_1row_1col.png') center center/cover no-repeat
+        &_2
+            background: url('../icons/mobile_1row_2col.png') center center/cover no-repeat
+        &_3
+            background: url('../icons/mobile_1row_3col.png') center center/cover no-repeat
+        &_4
+            background: url('../icons/mobile_2row_1col.png') center center/cover no-repeat
+        &_5
+            background: url('../icons/mobile_2row_2col.png') center center/cover no-repeat
+        &_6
+            background: url('../icons/mobile_2row_3col.png') center center/cover no-repeat
+        &_tx
+            color: $c_tx_wh
+            font:
+                style: Regular
+                size: 24px
+            text-transform: uppercase
+            text-align: center
+        &_plus
+            display: flex
+            justify-content: center
+            align-items: center
+            position: absolute
+            bottom: 35px
+            left: 50%
+            transform: translateX(-50%)
+            width: 29px
+            height: 29px
+            background-color: black
+            border-radius: 100%
+            margin: 0 auto   
+            cursor: pointer   
+            &:before
+                content: ''
+                display: block
+                width: 7px
+                height: 7px
+                border-radius: 100%
+                background-color: $c_tx_blue
+                transition: 0.4s all
+            &:after
+                content: ''
+                display: block
+                height: 7px
+                width: 7px
+                border-radius: 100%
+                background-color: $c_tx_blue
+                position: absolute
+                left: 50%
+                transform: translateX(-50%)
+                transition: 0.4s all
+            &:hover
+                &:after
+                    height: 14px
+                    width: 2px
+                    border-radius: 0
+                &:before
+                    width: 14px 
+                    height: 2px 
+                    border-radius: 0
+            &:active
+                &:before, &:after
+                    background-color: $c_tx_wh
+                   
+
+.car
+    min-height: 896px
+    background: url('../image/bg/car_bg.jpg') center center/cover no-repeat
+    padding: 32px 0 137px
+    .avto
+        margin: 0 auto
+        margin-top: 54px
+        max-width: 760px
+        max-height: 480px
+    &_tx
+        text-align: center
+        color: $c_tx_bl
+        font:
+            style: normal
+            weight: 300
+            size: 17px
+
+.ulli
+    padding: 66px 0 28px
+    .row
+        margin-top: 37px
+    &_title
+        color: $c_tx_blue
+        font:
+            style: normal
+            weight: 500
+            size: 22px
+    .ul_tx
+        margin-top: 25px
+        color: $c_tx_blue
+        font:
+            style: normal
+            weight: 300
+            size: 17px 
+    .list
+        margin-top: 20px
+        padding-left: 52px
+        list-style-type: none
+        .li_list
+            position: relative
+            font:
+                style: normal
+                weight: 300
+                size: 17px
+            margin-bottom: 10px
+            &:before
+                content: ''
+                display: block
+                width: 22px
+                height: 22px
+                @include blue_chek
+                position: absolute
+                left: -30px
+                top: 2px
+    .warning
+        .ulli_title
+            color: $c_tx_red
+        .list
+            .li_list
+                &:before
+                    @include red_chek
+    .col-md-6
+        margin-bottom: 61px  
+
+.planet
+    background: url('../image/bg/world_bg.jpg') center center/cover no-repeat
+    min-height: 714px
+    padding: 48px 0 21px
+    position: relative
+    .all_city
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        top: 650px
+        font:
+            style: normal
+            weight: 400
+            size: 15px
+        text-transform: uppercase
+        list-style: none
+        color: $c_tx_blue
+
+.footer
+    .all_wrapper
+        position: relative
+        display: flex
+        justify-content: space-between
+        align-items: center
+        min-height: 218px
+        .inst_all
+            margin-left: 10px
+            display: flex
+            .inst
+                display: flex
+                justify-content: center
+                align-items: center
+                margin-right: 6px
+                background-color: $c_tx_bl
+                width: 35px
+                height: 35px
+                border-radius: 100%
+                color: $c_tx_wh
+                span 
+                    color: $c_tx_wh
+        .app_all
+            display: flex
+            margin-right: 10px
+            .app
+                margin-left: 10px
+        .blue_line
+            align-self: start
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            background-color: $c_tx_blue
+            width: 300px
+            height: 5px
+            margin-top: 27px
+        .a_wrapper
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            padding: 31px 0 72px 0
+            height: 133px
+            width: 350px
+            .first_wrapper
+                display: flex
+                justify-content: space-between
+                .href_tx
+                    color: $c_tx_bl
+                    font:
+                        style: normal
+                        weight: 300
+                        size: 15px
+                    text-transform: uppercase
+                    list-style: none
+            .second_wrapper
+                margin-top: 15px
+                display: flex
+                justify-content: space-between
+                .href_tx
+                    color: #999999
+                    font:
+                        style: normal
+                        weight: 300
+                        size: 11px
+                        height: 68px
+                    text-transform: uppercase
+                    list-style: none
+            .href_tx_2
+                margin-top: 15px
+                display: flex
+                justify-content: center
+                color: $c_tx_blue
+                font:
+                    style: normal
+                    weight: 400
+                    size: 11px
+                text-transform: uppercase
+
+.xs_visible
+    display: none

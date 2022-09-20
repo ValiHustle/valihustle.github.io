@@ -1,0 +1,410 @@
+@media (max-width: 1200px)
+    .menu
+        &_item
+            padding-right: 18px
+            .menu_click
+                font-size: 13px
+    .promo
+        .uber_partners
+            font-size: 50px
+        .welcome 
+            font-size: 30px
+    .second
+        margin-bottom: 40px
+    .pcs .col-md-6
+        padding-top: 20px
+        .elem_tx
+            width: 270px
+            height: 200px
+        .elem
+            margin-top: 0
+            align-items: flex-start
+    .mobile 
+        &_item
+            width: 295px
+            &_tx
+                font-size: 20px
+    .car
+        .second_2
+            font-size: 30px
+            margin-bottom: 20px
+    .footer
+        .all_wrapper
+            .inst_all
+                margin-left: 30px
+                display: block
+                .inst
+                    margin-bottom: 5px
+            .app_all
+                display: block
+                margin-right: 30px
+                .app
+                    margin-bottom: 15px
+
+@media (max-width: 991px)
+    .menu
+        &_item
+            padding-right: 9px
+            .menu_click
+                font-size: 10px
+    .car
+        .avto
+            max-width: 50%
+            transform: translateX(-35%)
+            .car_img
+                width: 165%
+    .mobile 
+        &_item
+            width: 210px
+            height: 200px
+            &_tx
+                font-size: 15px
+    .sup_header
+        .logo_img
+            width: 100%
+        .logo_tx
+            font-size: 11px
+        .tel_href
+            font-size: 19px
+    .pcs 
+        .col-md-6
+            justify-content: space-around
+            .elem
+                .circ
+                    min-width: 90px
+                    min-height: 90px
+                    .icon
+                        width: 50px
+                .elem_h
+                    font-size: 13px
+                    line-height: 15px
+                .elem_tx
+                    font-size: 10px
+                    width: 200px
+                    height: 125px
+                    line-height: 15px
+                    margin-top: 10px
+    .footer
+        .all_wrapper
+            .inst_all
+                margin-left: 20px
+            .app_all
+                margin-right: 20px    
+    .promo
+        .uber_partners
+            font-size: 40px
+        .welcome 
+            font-size: 23px
+        .promo_tx
+            font-size: 14px
+    .car
+        min-height: 800px
+
+@media (max-width: 767px)
+    .menu
+        position: fixed
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        padding: 20px 15px
+        background-color: rgba(0, 0,  0, .8)
+        transition: 0.6s all
+        &_active
+            left: 0
+        &_item
+            padding-right: 0
+            border: 0
+            margin: 10px 0
+            .menu_click
+                font-size: 20px
+    .burger
+        display: block
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translateY(-50%)
+        width: 26px
+        height: 12px
+        .line
+            margin-bottom: 3px
+            display: block
+            height: 2px
+            width: 100%
+            background-color: #fff
+            transition: 0.6s all
+        &_active
+            .line
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: translateY(6px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(6px) rotate(45deg)
+    .sup_header
+        .xs_hidden
+            display: none
+        .xs_visible
+            display: block
+        .button_tx
+            display: block
+            margin: 0 auto
+            width: 140px
+            height: 40px
+            font-size: 12px
+            margin-top: 3px
+            &:hover
+                background-image: linear-gradient(0deg, $c_tx_blue 0%, #4CE2FF 100%)
+
+        .tel_href
+            display: block
+            margin-top: 10px
+            color: $c_tx_wh
+            font:
+                style: normal
+                weight: 400
+                size: 14px
+                transform: uppercase
+            text-align: center
+    .promo
+        .uber_partners
+            line-height: 45px
+        .promo_tx
+            line-height: 20px
+        .promo_bn
+            &:hover
+                background-image: linear-gradient(0deg, $c_tx_blue 0%, #4CE2FF 100%)  
+    .pcs
+        .second
+            margin-bottom: 0
+        .col-md-6
+            justify-content: center
+            .elem
+                display: flex
+                flex-wrap: wrap
+                width: 70%
+                margin-top: 30px
+                .circ
+                    min-width: 90px
+                    min-height: 90px
+                    margin-right: 0
+                    margin-bottom: 10px
+                    .icon
+                        width: 50px
+                .elem_h
+                    font-size: 13px
+                    line-height: 15px
+                    width: 100%
+                .elem_tx
+                    font-size: 12px
+                    line-height: 15px
+                    width: 100%
+                    height: 100%
+                    margin: 0 auto
+                    margin-top: 5px
+    .car
+        min-height: 700px
+        .avto
+            .car_img
+                transform: translateY(none)
+        .car_tx
+            display: block
+            transform: translateY(100%)
+    .footer
+        .all_wrapper
+            .inst_all
+                margin-left: 5px
+            .app_all
+                margin-right: 5px
+
+@media (max-width: 575px)
+    nav
+        height: 30px
+    header
+        height: 30px
+    .sup_header
+        top: 30px
+        height: 60px
+        .logo_tx
+            display: none
+        .logo_img
+            margin-top: 18px
+            img
+                width: 100%
+        .button_tx
+            font-size: 10px
+            width: 110px
+            height: 22px
+            margin-top: 0
+        .tel_href
+            margin-top: 8px
+    .promo
+        min-height: 400px
+        padding: 100px 0 34px 0
+        .promo_tx
+            display: none
+        .uber_partners
+            padding: 0 23px
+            margin-top: 0
+            font-size: 30px
+            line-height: 30px
+        .welcome
+            padding: 0 10px
+            font-size: 20px
+            line-height: 20px
+        .promo_bn
+            margin-top: 73px
+    .footer
+        .all_wrapper
+            justify-content: space-around
+            flex-wrap: wrap
+            position: relative
+            .inst_all
+                margin-left: 15px
+                display: flex
+                position: absolute
+                bottom: 65px
+                .inst
+                    width: 25px
+                    height: 25px
+                    font-size: 10px
+                    margin-bottom: 5px
+            .app_all
+                display: flex
+                position: absolute
+                bottom: 20px
+                margin-right: 0
+                .app
+                    margin-bottom: 15px
+            .blue_line
+                width: 60%
+                height: 2px
+                margin-top: 10px
+            .a_wrapper
+                width: 90%  
+                padding: 0
+                top: 30px
+                display: flex
+                flex-direction: column
+                align-items: center
+                .first_wrapper
+                    .href_tx
+                        margin-right: 10px
+                        font-size: 13px
+                .second_wrapper
+                    margin-top: 5px
+                    width: 80%
+                    flex-wrap: wrap
+                    .href_tx
+                        margin-right: 10px
+                        font-size: 11px
+                        line-height: 20px
+                .href_tx_2
+                    margin-top: 5px
+                    font-size: 11px            
+    .menu
+        width: 86%    
+        .menu_item
+            width: 100%
+            text-align: center
+            padding: 4px
+            .menu_click
+                display: block
+
+    .pcs
+        padding: 22px 0 38px 0 
+        .second
+            font-size: 15px
+            margin-top: 15px
+            line-height: 15px
+        .col-md-6
+            .elem
+                margin-top: 24px
+                width: 289px
+                padding: 0 5px
+            .block
+                margin-top: 26px
+    .mobile
+        padding: 25px 0 42px 0
+        .first
+            margin-top: 0
+        .second
+            font-size: 16px
+            margin-top: 14px
+            margin-bottom: 0
+        .tree
+            font-size: 14px
+        .row
+            .mobile_item
+                width: 290px
+                height: 254px
+                &_tx
+                    font-size: 18px
+    .car
+        background: url('../image/bg/mobile_car_bg.jpg') center center/cover no-repeat
+        min-height: 395px
+        padding: 25px 0 31px 0
+        .first_2
+            margin-top: 0
+        .second_2
+            display: none
+        .tree_2
+            display: none
+        .avto 
+            display: flex
+            justify-content: center
+            max-width: none
+            transform: translateX(0%)
+            .car_img
+                width: 300px
+                transform: translateY(none)
+        .car_tx
+            transform: translateY(0%)
+            font-size: 17px
+            color: $c_tx_wh
+    .ulli
+        padding: 24px 0 30px 0
+        .first
+            margin-top: 0
+        .second 
+            font-size: 16px
+            margin-top: 14px
+            margin-bottom: 0
+        .row
+            margin-top: 30px
+            .col-md-6
+                margin-bottom: 0px
+                margin-top: 30px
+                .list_wrapper
+                    .ulli_title
+                        font-size: 16px
+                    .list
+                        margin-bottom: 15px
+                        margin-top: 5px
+                        padding-left: 27px
+                        .li_list
+                            font-size: 14px
+                .ul_tx
+                    font-size: 14px
+    .planet
+        min-height: 360px
+        padding: 26px 0 30px 0
+        .first_2
+            margin-top: 0
+            width: 75px
+        .second_2
+            font-size: 16px
+            margin-bottom: 0
+            margin-top: 16px
+        .tree_2
+            margin-top: 11px
+            font-size: 14px
+        .all_city
+            width: 200px
+            top: 315px
+            transform: translateX(-48%)
+            

@@ -1,0 +1,49 @@
+@mixin red_chek 
+    background: url('../icons/check_red.png') center center/20px 20px no-repeat
+
+@mixin blue_chek
+    background: url('../icons/check_blue.png') center center/20px 20px no-repeat
+
+@mixin hover_bn
+    &:hover
+        background-image: none
+        background-color: $c_tx_blue
+
+@mixin bn
+    margin-top: 18px
+    width: 172px
+    height: 46px
+    background-image: linear-gradient(0deg, $c_tx_blue 0%, #4CE2FF 100%)
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12)
+    border-radius: 4px
+    color: $c_tx_wh
+    font:
+        style: normal
+        weight: 400
+        size: 14px
+        transform: uppercase
+    @include hover_bn
+    
+@mixin first
+    width: 115px
+    height: 27px
+    background: $c_tx_bl
+    text-transform: uppercase
+    color: $c_tx_wh
+    font:
+        weight: 500
+        size: 11px
+        style: normal
+    text-align: center
+    padding: 6px
+    margin: 0 auto
+    margin-top: 18px
+    
+@mixin second
+    text-transform: uppercase
+    color: $c_tx_bl
+    font:
+        weight: 700
+        size: 38px
+    margin-top: 32px
+    text-align: center
